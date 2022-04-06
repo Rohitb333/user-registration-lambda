@@ -30,6 +30,13 @@ public class UserRegistration {
                 "rohitb333@gmail.com"));
         System.out.println("=======================================================================================");
 
+
+        Validation isValidMobileNumber = (pattern, mobileNumber) -> {
+            return "Mobile number is " + Pattern.compile(pattern).matcher(mobileNumber).matches();
+        };
+        System.out.println(isValidMobileNumber.validate("^[91]+[ ]?[6-9]{1}[0-9]{9}$", "91 8329522845"));
+        System.out.println("=======================================================================================");
+
     }
 }
 
