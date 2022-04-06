@@ -23,13 +23,5 @@ public class UserRegistration {
         System.out.println(isValidFirstName.validate("^[A-Z]{1}[a-z]{2,}$", "Rohit"));
         System.out.println("=======================================================================================");
 
-        Validation isValidEmail = (pattern, email) -> {
-            return "Email is " + Pattern.compile(pattern).matcher(email).matches();
-        };
-        System.out.println(isValidEmail.validate("^[a-z]+[+-_.]*[a-z]*[@][a-z]+[.][a-z]{2,4}[.]*([a-z]{2})*$",
-                "rohitb333@gmail.com"));
-        System.out.println("=======================================================================================");
-
     }
 }
-
