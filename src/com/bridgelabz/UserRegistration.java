@@ -23,6 +23,7 @@ public class UserRegistration {
         System.out.println(isValidFirstName.validate("^[A-Z]{1}[a-z]{2,}$", "Rohit"));
         System.out.println("=======================================================================================");
 
+
         Validation isValidLastName = (pattern, lastName) -> {
             return "Last Name is " + Pattern.compile(pattern).matcher(lastName).matches();
         };
@@ -35,7 +36,5 @@ public class UserRegistration {
         System.out.println(isValidEmail.validate("^[a-z]+[+-_.]*[a-z]*[@][a-z]+[.][a-z]{2,4}[.]*([a-z]{2})*$",
                 "rohitb333@gmail.com"));
         System.out.println("=======================================================================================");
-
     }
 }
-
