@@ -36,5 +36,6 @@ public class UserRegistration {
         System.out.println(isValidEmail.validate("^[a-z]+[+-_.]*[a-z]*[@][a-z]+[.][a-z]{2,4}[.]*([a-z]{2})*$",
                 "rohitb333@gmail.com"));
         System.out.println("=======================================================================================");
+
     }
 }
