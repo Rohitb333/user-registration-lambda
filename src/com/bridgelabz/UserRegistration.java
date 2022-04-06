@@ -17,17 +17,5 @@ public class UserRegistration {
         System.out.println("Welcome to User Registration Problem using lambda");
         System.out.println("=======================================================================================");
 
-        Validation isValidFirstName = (pattern, firstName) -> {
-            return "First Name is " + Pattern.compile(pattern).matcher(firstName).matches();
-        };
-        System.out.println(isValidFirstName.validate("^[A-Z]{1}[a-z]{2,}$", "Rohit"));
-        System.out.println("=======================================================================================");
-
-        Validation isValidLastName = (pattern, lastName) -> {
-            return "Last Name is " + Pattern.compile(pattern).matcher(lastName).matches();
-        };
-        System.out.println(isValidLastName.validate("^[A-Z]{1}[a-z]{2,}$", "Bansod"));
-        System.out.println("=======================================================================================");
     }
 }
-
