@@ -23,6 +23,5 @@ public class UserRegistration {
         System.out.println(isValidFirstName.validate("^[A-Z]{1}[a-z]{2,}$", "Rohit"));
         System.out.println("=======================================================================================");
 
-
     }
 }
